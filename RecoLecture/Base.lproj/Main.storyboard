@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecoLecture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -81,13 +80,14 @@
                         <outlet property="upload" destination="dXf-p2-i8j" id="CGG-IB-aQt"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
         </scene>
-        <!--View Controller-->
+        <!--My Classes View Controller-->
         <scene sceneID="aHq-oS-S5X">
             <objects>
-                <viewController id="s0U-jd-9Ey" sceneMemberID="viewController">
+                <viewController id="s0U-jd-9Ey" customClass="MyClassesViewController" customModule="RecoLecture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v1j-AI-j2h"/>
                         <viewControllerLayoutGuide type="bottom" id="WmP-OD-esp"/>
@@ -112,9 +112,16 @@ and files.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_arrow_back_3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pfn-oT-iFV">
+                                <rect key="frame" x="20" y="48" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="back" destination="Pfn-oT-iFV" id="S0I-nz-Npc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAs-tD-Ako" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,13 +155,17 @@ previously recorded.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_arrow_back_3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQy-XU-ZtR">
+                                <rect key="frame" x="20" y="48" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szE-wQ-6me" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="882"/>
+            <point key="canvasLocation" x="134.78260869565219" y="881.25000000000011"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ajB-ka-Xs5">
@@ -182,6 +193,10 @@ previously recorded.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_arrow_back_3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="7jW-k7-BLJ">
+                                <rect key="frame" x="20" y="48" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -191,4 +206,7 @@ previously recorded.</string>
             <point key="canvasLocation" x="801" y="880"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_arrow_back_3x.png" width="72" height="72"/>
+    </resources>
 </document>
