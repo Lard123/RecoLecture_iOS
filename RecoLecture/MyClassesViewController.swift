@@ -9,18 +9,9 @@
 import UIKit
 
 class MyClassesViewController: UIViewController {
-    @IBOutlet var back: UIImageView!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        let imageView = back!
-        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(imageTapped(img:)))
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(tapGestureRecognizer)
-    }
-    
-    func imageTapped(img: AnyObject) {
-        print("Hue")
+        
     }
 
     override func didReceiveMemoryWarning() {
